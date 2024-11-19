@@ -1,0 +1,8 @@
+/* ... (same as above but update branding colors to use a "bold futuristic" palette: #1e1e2f, #ff6501, #4db8ff) ... */
+
+/* Typed.js Styles */
+.hero-content h1 span {
+    color: #ff6501;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
