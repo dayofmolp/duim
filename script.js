@@ -1,28 +1,46 @@
-// Particles.js Initialization
-particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json', function() {
-    console.log('Particles.js loaded.');
+// Contact Form Validation and Sending Message
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name && email && message) {
+        alert(`Message sent from ${name}. We'll respond shortly.`);
+        // Here you can integrate your form handler, like EmailJS
+    } else {
+        alert("Please fill in all fields.");
+    }
 });
 
-// Typed.js Initialization for Dynamic Text
-new Typed('#typed', {
-    strings: ["Innovate. Create. Duis."],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true
-});
+// Dynamic Navbar Highlight on Scroll
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section');
 
-// Smooth Scrolling
-document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 50) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
     });
 });
 
-// Contact Form Alert
-document.querySelector('.contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you for reaching out! We’ll get back to you soon.');
+// Activate 3D Button Effect
+const buttons = document.querySelectorAll('.cta-btn');
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        button.style.transform = 'scale(1.1)';
+    });
+    button.addEventListener('mouseleave', () => {
+        button.style.transform = 'scale(1)';
+    });
 });
