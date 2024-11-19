@@ -33,30 +33,57 @@
     <section class="section" id="portfolio">
         <h2>Our Portfolio</h2>
         <div class="portfolio-gallery">
+            <!-- Portfolio Item 1 -->
             <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/500x500/?blockchain" alt="Blockchain Project">
                 <div class="portfolio-info">
                     <h3>Blockchain Supply Chain</h3>
-                    <p>Developed a decentralized supply chain solution using blockchain to enhance transparency and efficiency.</p>
-                    <a href="https://github.com/your-repo" class="project-link" target="_blank">View Project</a>
+                    <p>Decentralized supply chain solution using blockchain for enhanced transparency and efficiency.</p>
+                    <button class="popup-btn" data-popup="popup-1">View Project</button>
+                </div>
+            </div>
+            <!-- Popup for Portfolio Item 1 -->
+            <div class="popup" id="popup-1">
+                <div class="popup-content">
+                    <h3>Blockchain Supply Chain</h3>
+                    <p>Detailed breakdown of the project, tech used, and results achieved. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="https://github.com/your-repo" target="_blank" class="project-link">View on GitHub</a>
+                    <button class="close-btn">Close</button>
                 </div>
             </div>
 
+            <!-- Portfolio Item 2 -->
             <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/500x500/?ai" alt="AI Project">
                 <div class="portfolio-info">
                     <h3>AI-Powered Chatbot</h3>
-                    <p>Created a conversational AI chatbot for customer service, increasing engagement and response time.</p>
-                    <a href="https://github.com/your-repo" class="project-link" target="_blank">View Project</a>
+                    <p>Created a conversational AI chatbot for customer service that enhances engagement.</p>
+                    <button class="popup-btn" data-popup="popup-2">View Project</button>
+                </div>
+            </div>
+            <!-- Popup for Portfolio Item 2 -->
+            <div class="popup" id="popup-2">
+                <div class="popup-content">
+                    <h3>AI-Powered Chatbot</h3>
+                    <p>Project details on how we developed the chatbot with Python and NLP techniques for better customer engagement...</p>
+                    <a href="https://github.com/your-repo" target="_blank" class="project-link">View on GitHub</a>
+                    <button class="close-btn">Close</button>
                 </div>
             </div>
 
+            <!-- Portfolio Item 3 -->
             <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/500x500/?cloud" alt="Cloud Computing Project">
                 <div class="portfolio-info">
                     <h3>Cloud-Based Inventory Management</h3>
-                    <p>Developed a cloud computing solution to manage inventory in real-time for multiple locations.</p>
-                    <a href="https://github.com/your-repo" class="project-link" target="_blank">View Project</a>
+                    <p>Built a cloud solution for real-time inventory tracking across multiple locations.</p>
+                    <button class="popup-btn" data-popup="popup-3">View Project</button>
+                </div>
+            </div>
+            <!-- Popup for Portfolio Item 3 -->
+            <div class="popup" id="popup-3">
+                <div class="popup-content">
+                    <h3>Cloud-Based Inventory Management</h3>
+                    <p>Cloud computing solution enabling multi-location inventory management, integrated with AWS services for scalable architecture...</p>
+                    <a href="https://github.com/your-repo" target="_blank" class="project-link">View on GitHub</a>
+                    <button class="close-btn">Close</button>
                 </div>
             </div>
         </div>
@@ -66,22 +93,52 @@
     <section class="section" id="blog">
         <h2>Blog</h2>
         <div class="blog-preview">
+            <!-- Blog Post 1 -->
             <div class="blog-post">
                 <h3>How Blockchain is Transforming Supply Chains</h3>
-                <p>Explore the impact of blockchain technology on supply chain management, from reducing fraud to increasing transparency...</p>
-                <a href="blog/blockchain-supply-chain.html" class="project-link">Read More</a>
+                <p>Explore how blockchain technology impacts supply chains, improving transparency and reducing fraud...</p>
+                <button class="popup-btn" data-popup="popup-blog-1">Read More</button>
             </div>
 
+            <!-- Blog Popup 1 -->
+            <div class="popup" id="popup-blog-1">
+                <div class="popup-content">
+                    <h3>How Blockchain is Transforming Supply Chains</h3>
+                    <p>Blockchain enhances transparency, security, and efficiency in supply chains. Discover how decentralized tech can revolutionize logistics...</p>
+                    <button class="close-btn">Close</button>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
             <div class="blog-post">
                 <h3>AI in Everyday Life: Current Trends and Predictions</h3>
-                <p>Artificial Intelligence is reshaping how we live. Discover how AI is currently impacting industries and what the future holds...</p>
-                <a href="blog/ai-trends-predictions.html" class="project-link">Read More</a>
+                <p>Discover how AI is becoming part of our daily lives and explore future possibilities for smarter living...</p>
+                <button class="popup-btn" data-popup="popup-blog-2">Read More</button>
             </div>
 
+            <!-- Blog Popup 2 -->
+            <div class="popup" id="popup-blog-2">
+                <div class="popup-content">
+                    <h3>AI in Everyday Life</h3>
+                    <p>AI is reshaping various industries, from healthcare to entertainment. Dive into its current trends and the future possibilities...</p>
+                    <button class="close-btn">Close</button>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
             <div class="blog-post">
                 <h3>Mastering the Cloud: Beginner to Pro in 2024</h3>
-                <p>Cloud computing is the backbone of modern tech. Learn how to navigate through AWS, Azure, and Google Cloud to boost your career...</p>
-                <a href="blog/cloud-computing-guide.html" class="project-link">Read More</a>
+                <p>Learn how cloud computing is revolutionizing the tech industry and get practical tips for mastering cloud platforms like AWS and Azure...</p>
+                <button class="popup-btn" data-popup="popup-blog-3">Read More</button>
+            </div>
+
+            <!-- Blog Popup 3 -->
+            <div class="popup" id="popup-blog-3">
+                <div class="popup-content">
+                    <h3>Mastering the Cloud: Beginner to Pro</h3>
+                    <p>Cloud computing is a must-learn for 2024. This blog guides you from the basics to advanced concepts to give you a competitive edge...</p>
+                    <button class="close-btn">Close</button>
+                </div>
             </div>
         </div>
     </section>
@@ -183,17 +240,34 @@
                     }
                 },
                 modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
                     repulse: {
                         distance: 100,
                         duration: 0.4
                     },
                     push: {
                         particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
                     }
                 }
             },
             retina_detect: true
         });
     </script>
+
 </body>
 </html>
